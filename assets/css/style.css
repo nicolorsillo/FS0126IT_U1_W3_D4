@@ -1,0 +1,59 @@
+/* header */
+header {
+  text-align: center;
+  font-size: 4em;
+  background-color: aqua;
+}
+
+/* tabellone */
+#board-section {
+  background-color: burlywood;
+  text-align: center;
+}
+
+#board-div {
+  display: inline-block;
+  width: 1400px;
+}
+
+.board-folder {
+  display: inline-block;
+  color: brown;
+  border: 8px solid brown;
+  width: 40%;
+}
+
+.board-cell {
+  display: inline-block;
+  width: 17%;
+  height: 95px;
+  position: relative;
+  border: 8px solid brown;
+  border-radius: 100%;
+}
+
+.board-cell h3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+h2 {
+  font-size: 2em;
+  color: red;
+}
+
+#section-random-number {
+  text-align: center;
+  margin: 4em;
+}
+
+.numeroUscito {
+  background-color: brown;
+  color: white;
+}
