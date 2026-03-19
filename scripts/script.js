@@ -65,6 +65,7 @@ const numeriUsciti = []
 const newNumber = function () {
   if (numeriUsciti.length === 90) {
     alert("Hai pescato tutti i numeri ricominciamo")
+    window.location.reload()
   } else {
     let number = randomNumber()
     for (i = 0; i < numeriUsciti.length; i++) {
