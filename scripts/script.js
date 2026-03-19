@@ -54,7 +54,7 @@ applyCells()
 
 // funzione per numero random da 1 a 90
 const randomNumber = function () {
-  let number = Math.ceil(Math.random() * 90)
+  let number = Math.floor(Math.random() * 90 + 1)
   return number
 }
 
@@ -63,13 +63,20 @@ console.log(randomNumber())
 const numeriUsciti = []
 
 const newNumber = function () {
-  let number = randomNumber()
-  for (i = 0; i < numeriUsciti.length; i++) {
-    if (number === numeriUsciti[i]) {
-      number = randomNumber()
-      i = 0
+  if (numeriUsciti.length === 90) {
+    alert("Hai pescato tutti i numeri ricominciamo")
+  } else {
+    let number = randomNumber()
+    for (i = 0; i < numeriUsciti.length; i++) {
+      if (number === numeriUsciti[i]) {
+        number = randomNumber()
+        i = -1
+      }
     }
+
+    numeriUsciti.push(number)
+    document
+      .getElementById(`cell-number-${number}`)
+      .classList.add("numeroUscito")
   }
-  numeriUsciti.push(number)
-  document.getElementById(`cell-number-${number}`).classList.add("numeroUscito")
 }

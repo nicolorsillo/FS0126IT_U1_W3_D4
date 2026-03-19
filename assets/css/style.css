@@ -2,7 +2,12 @@
 header {
   text-align: center;
   font-size: 4em;
-  background-color: aqua;
+  background-color: rgb(79, 40, 16);
+  color: red;
+}
+
+main {
+  background-color: blanchedalmond;
 }
 
 /* tabellone */
@@ -56,4 +61,14 @@ h2 {
 .numeroUscito {
   background-color: brown;
   color: white;
+}
+
+button {
+  background-color: rgb(227, 126, 59);
+  margin-bottom: 2em;
+  font-size: 2em;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
 }
